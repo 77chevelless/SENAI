@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Produtos - Desafio</title>
+    <style>
+        body {
+            background-color: #f4f4f4; 
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        table {
+            width: 90%;
+            max-width: 1000px;
+            border-collapse: collapse; /
+            background-color: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            border: 1px groove #ccc; 
+            padding: 12px; 
+            text-align: center; 
+        }
+
+        th {
+            background-color: #f9f9f9;
+            font-weight: bold;
+        }
+
+    
+        .img-produto {
+            width: 120px; 
+            border-radius: 4px;
+            transition: transform 0.3s; 
+        }
+
+        .img-produto:hover {
+            transform: scale(1.1); 
+        }
+
+        iframe {
+            border-radius: 8px;
+            border: none;
+        }
+
+        .total-destaque {
+            color: #2c3e50;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2> Lista de produtos</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Produto</th>
+                <th>Imagem</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+                <th>Vídeo</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Redmi 14c</td>
+                <td>
+                    <img src="OIP.png" alt="Smartphone" class="img-produto">
+                </td>
+                <td>R$ 1.200,00</td>
+                <td>2</td>
+                <td>
+                    <iframe width="180" height="100" src="https://www.youtube.com/shorts/Rt7qX_jYmnI" title="Review"></iframe>
+                </td>
+                <td class="total-destaque">R$ 2.400,00</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
